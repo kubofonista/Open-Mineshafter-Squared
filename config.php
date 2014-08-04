@@ -38,9 +38,7 @@ $MySQL['username']    = "USERNAME"; // be secure, please do not use root
 $MySQL['password']    = 'PASSWORD';
 $MySQL['database']    = "DATABASENAME";
 
-$MySQL['link']        = mysql_connect($MySQL['url'],
-                                      $MySQL['username'],
-                                      $MySQL['password']) or die("Could not connect to: ".$MySQL['url'].", Error: ".mysql_error());
+$MySQL['link']        = mysql_connect($MySQL['url'], $MySQL['username'], $MySQL['password']) or die("Could not connect to: ".$MySQL['url'].", Error: ".mysql_error());
 
 /**
  * Defaults
